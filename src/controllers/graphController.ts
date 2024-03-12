@@ -18,7 +18,7 @@ export const generateGraph = (params: IParams): IData[][] => {
 
   if (params.initDay > params.daysPerWeek) return weeks;
 
-  while (max > 0) {
+  while (max >= 0) {
     week.push({
       [subtractDays(max).getDate().toString()]: 0,
     });
