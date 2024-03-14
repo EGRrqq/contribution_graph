@@ -19,9 +19,14 @@ function init() {
     c.forEach((n, ri) => {
       const section = document.createElement("section");
       section.textContent = n.getDate().toString();
+
       section.style.gridArea = `${ri + 1}/${ci + 1}`;
 
       col.style.gridArea = `1/${ci + 1}`;
+      if (`${n.getMonth()}-${n.getDate()}` === "11-31") {
+        if (n.getDay() != 6)
+          col.style.gridArea = `1/${ci + 2}`;
+      }
       col.appendChild(section);
     });
 
