@@ -4,7 +4,7 @@ declare global {
   }
 }
 
-Date.prototype.getWeek = function() {
+Date.prototype.getWeek = function () {
   const date = this;
   const oneDay = 24 * 60 * 60 * 1000;
   const firstDayOfYear = new Date(date.getFullYear(), 0, 1);

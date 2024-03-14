@@ -10,7 +10,6 @@ class GraphController implements IGraphController {
   getWeeks = (dates: string[]): IGroups =>
     dates.reduce((acc: IGroups, d) => {
       const date = new Date(Date.parse(d));
-      //@ts-ignore
       const yearWeek = `${date.getFullYear()}-${date.getWeek()}`;
 
       if (!acc[yearWeek]) {

@@ -1,2 +1,2 @@
-export { dateController } from "./dateController"
-export { graphController } from "./graphController"
+export { dateController } from "./dateController";
+export { graphController } from "./graphController";

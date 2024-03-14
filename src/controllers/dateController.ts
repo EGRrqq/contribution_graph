@@ -6,11 +6,11 @@ class DateController implements IDateController {
   #subtractDays = (n: number) => {
     const today = new Date();
     return new Date(new Date().setDate(today.getDate() - n));
-  }
+  };
 
   #formatDate = (date: Date) => {
-    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
-  }
+    return `${date.toISOString().slice(0, 10)}T00:00`;
+  };
 
   getLastDates = (days: number): string[] => {
     const dates = [];

@@ -1,1 +1,1 @@
-import "./date.d.ts"
+import "./date.d.ts";
