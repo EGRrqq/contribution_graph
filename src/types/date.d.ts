@@ -1,7 +1,5 @@
-declare global {
-  interface Date {
-    getWeek(): number;
-  }
+declare interface Date {
+  getWeek(): number;
 }
 
 Date.prototype.getWeek = function () {
